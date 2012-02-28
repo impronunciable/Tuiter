@@ -14,7 +14,7 @@
 				, "sample" : "https://stream.twitter.com/1/statuses/sample.json"
 			}
 		, "post" : {
-		
+          "filter" : "https://stream.twitter.com/1/statuses/filter.json"
 		}
 	}
 	, "rest" : {
