@@ -1,24 +1,24 @@
 {
     "oauth" : {
-  	    "request_token_url" : "https://twitter.com/oauth/request_token"
-		  , "access_token_url" : "https://twitter.com/oauth/access_token"
-			, "version" : "1.0"
-			, "method" : "HMAC-SHA1"
-  	}
-	, "search" : {
-      "url" : "http://search.twitter.com/search.json"
-	}
-	, "streaming" : {
-		  "get" : {
-		      "firehose" : "https://stream.twitter.com/1/statuses/firehose.json"
-				, "sample" : "https://stream.twitter.com/1/statuses/sample.json"
+        "request_token_url" : "https://twitter.com/oauth/request_token"
+      , "access_token_url" : "https://twitter.com/oauth/access_token"
+      , "version" : "1.0"
+      , "method" : "HMAC-SHA1"
+    }
+  , "search" : {
+        "url" : "http://search.twitter.com/search.json"
+    }
+  , "streaming" : {
+      "get" : {
+          "firehose" : "https://stream.twitter.com/1/statuses/firehose.json"
+        , "sample" : "https://stream.twitter.com/1/statuses/sample.json"
         , "links" : "https://stream.twitter.com/1/statuses/links.json"
         , "retweet" : "https://stream.twitter.com/1/statuses/retweet.json"
-			}
-		, "post" : {
+      }
+    , "post" : {
           "filter" : "https://stream.twitter.com/1/statuses/filter.json"
-		}
-	}
+      }
+    }
 	, "rest" : {
 	    "get" : {
           "homeTimeline" : "http://api.twitter.com/1/statuses/home_timeline.json"
