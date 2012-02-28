@@ -6,7 +6,16 @@
 			, "method" : "HMAC-SHA1"
   	}
 	, "search" : {
-		"url" : "http://search.twitter.com/search.json"
+      "url" : "http://search.twitter.com/search.json"
+	}
+	, "streaming" : {
+		  "get" : {
+		      "firehose" : "https://stream.twitter.com/1/statuses/firehose.json"
+				, "sample" : "https://stream.twitter.com/1/statuses/sample.json"
+			}
+		, "post" : {
+		
+		}
 	}
 	, "rest" : {
 	    "get" : {
@@ -37,7 +46,6 @@
 				, "noRetweetsFriends" : "https://api.twitter.com/1/friendships/no_retweet_ids.json"
 			}
 		, "post" : {
-		
 			}
 	}
 }
