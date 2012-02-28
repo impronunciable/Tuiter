@@ -12,6 +12,8 @@
 		  "get" : {
 		      "firehose" : "https://stream.twitter.com/1/statuses/firehose.json"
 				, "sample" : "https://stream.twitter.com/1/statuses/sample.json"
+        , "links" : "https://stream.twitter.com/1/statuses/links.json"
+        , "retweet" : "https://stream.twitter.com/1/statuses/retweet.json"
 			}
 		, "post" : {
           "filter" : "https://stream.twitter.com/1/statuses/filter.json"
