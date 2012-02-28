@@ -60,7 +60,7 @@
         , "listsStatuses" : "https://api.twitter.com/1/lists/statuses.json"
         , "listsMemberships" : "https://api.twitter.com/1/lists/memberships.json"
         , "listSuscribers" : "https://api.twitter.com/1/lists/subscribers.json"
-        , "showListSuscribers" "https://api.twitter.com/1/lists/subscribers/show.json"
+        , "showListSuscribers" : "https://api.twitter.com/1/lists/subscribers/show.json"
         , "isMember" : "https://api.twitter.com/1/lists/members/show.json"
         , "listMembers" : "https://api.twitter.com/1/lists/members.json"
         , "lists" : "https://api.twitter.com/1/lists.json"
