@@ -19,8 +19,8 @@
           "filter" : "https://stream.twitter.com/1/statuses/filter.json"
       }
     }
-	, "rest" : {
-	    "get" : {
+  , "rest" : {
+      "get" : {
           "homeTimeline" : "http://api.twitter.com/1/statuses/home_timeline.json"
         , "mentions" : "http://api.twitter.com/1/statuses/mentions.json"
         , "publicTimeline" : "http://api.twitter.com/1/statuses/public_timeline.json"
