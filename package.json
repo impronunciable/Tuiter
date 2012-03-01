@@ -1,6 +1,6 @@
 { "name" : "tuiter"
 , "description" : "Library for interacting with Twitter API"
-, "version" : "0.0.1"
+, "version" : "0.0.2"
 , "directories" : { "lib" : "./lib" }
 , "main" : "index.js"
 , "author" : "Dan Zajdband <dan.zajdband@gmail.com>"
