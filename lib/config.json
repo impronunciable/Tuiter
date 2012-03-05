@@ -1,6 +1,8 @@
 {
     "oauth" : {
-        "request_token_url" : "https://twitter.com/oauth/request_token"
+        "authenticate_url" : "https://api.twitter.com/oauth/authenticate"
+			, "authorize_url" : "https://api.twitter.com/oauth/authorize"
+      , "request_token_url" : "https://twitter.com/oauth/request_token"
       , "access_token_url" : "https://twitter.com/oauth/access_token"
       , "version" : "1.0"
       , "method" : "HMAC-SHA1"
