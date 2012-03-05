@@ -126,7 +126,7 @@
       , "401" : { "definition": "Unauthorized", "description": "Authentication credentials were missing or incorrect." }
       , "403" : { "definition": "Forbidden", "description": "The request is understood, but it has been refused. An accompanying error message will explain why. This code is used when requests are being denied due to update limits." }
       , "404" : { "definition": "Not found", "description": "The URI requested is invalid or the resource requested, such as a user, does not exists." }
-      , "406" : { "definition": "Not acceptable", "description": "Returned by the Search API when an invalid format is specified in the request." }
+      , "406" : { "definition": "Not acceptable", "description": "Returned when an invalid format is specified in the request." }
       , "420" : { "definition": "Enhance Your Calm", "description": "Returned by the Search and Trends API when you are being rate limited." }
       , "500" : { "definition": "Internal Server Error", "description": "Something is broken. Please post to the group so the Twitter team can investigate." }
       , "502" : { "definition": "Bad Gateway", "description": "Twitter is down or being upgraded." }
