@@ -10,35 +10,35 @@ Tuiter is a Node.JS library that makes the interaction with the Twitter API easy
 
 + Require Tuiter
     ```js
-    var Tuiter = require('tuiter');
+        var Tuiter = require('tuiter');
     ```
 + Create a Tuiter object with your [Twitter application keys](https://dev.twitter.com/apps/new)
     ```js
-    var tu = Tuiter({
-        "consumer_key" : "blablabla"
-	    , "consumer_secret" : "blablabla" 
-	    , "access_token_key" : "blablabla"
-	    , "access_token_secret" : "blablabla"
-		});
+        var tu = Tuiter({
+            "consumer_key" : "blablabla"
+	        , "consumer_secret" : "blablabla" 
+	        , "access_token_key" : "blablabla"
+	        , "access_token_secret" : "blablabla"
+	    	});
     ```
 + Use the api methods as you want, for example:
     ```js
-      tu.mentions({trim_user: false}, function(err, data){
-			  console.log(data);
-			});
+        tu.mentions({trim_user: false}, function(err, data){
+	 		    console.log(data);
+			  });
     ```
 
 + Using the Streaming is a little different:
     ```js
-      tu.filter({track: ['soccer','pokemon']}, function(stream){
-			  stream.on('data', function(data){
-			    console.log(data);
-				});
+        tu.filter({track: ['soccer','pokemon']}, function(stream){
+			    stream.on('data', function(data){
+			      console.log(data);
+				  });
 
-				stream.on('error', function(err){
-				  console.log(err);
-				});
-			});
+			  	stream.on('error', function(err){
+				    console.log(err);
+				  });
+	      });
     ```
 
 ## Features
