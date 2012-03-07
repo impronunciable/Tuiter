@@ -1,7 +1,8 @@
 { "name" : "tuiter"
 , "description" : "Library for interacting with Twitter API"
-, "version" : "0.0.2"
+, "version" : "0.0.3"
 , "directories" : { "lib" : "./lib" }
+, "keywords" : ["twitter","api","streaming api"]
 , "main" : "index.js"
 , "author" : "Dan Zajdband <dan.zajdband@gmail.com>"
 , "dependencies" : {
