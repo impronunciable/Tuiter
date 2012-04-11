@@ -14,7 +14,7 @@ Require Tuiter
 
 Create a Tuiter object with your [Twitter application keys](https://dev.twitter.com/apps/new)
  
-    var tu = Tuiter({
+    var tu = new Tuiter({
         "consumer_key" : "blablabla"
       , "consumer_secret" : "blablabla" 
       , "access_token_key" : "blablabla"
