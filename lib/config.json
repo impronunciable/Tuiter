@@ -16,6 +16,8 @@
         , "sample" : "https://stream.twitter.com/1/statuses/sample.json"
         , "links" : "https://stream.twitter.com/1/statuses/links.json"
         , "retweet" : "https://stream.twitter.com/1/statuses/retweet.json"
+        , "user" : "https://userstream.twitter.com/2/user.json"
+        , "site" : "https://sitestream.twitter.com/2b/site.json"
       }
     , "post" : {
           "filter" : "https://stream.twitter.com/1/statuses/filter.json"
