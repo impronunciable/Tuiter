@@ -1,11 +1,16 @@
-{ "name" : "tuiter"
-, "description" : "Library for interacting with Twitter API"
-, "version" : "0.0.6"
-, "directories" : { "lib" : "./lib" }
-, "keywords" : ["twitter","api","streaming api"]
-, "main" : "index.js"
-, "author" : "Dan Zajdband <dan.zajdband@gmail.com>"
-, "dependencies" : {
-	"oauth" : "0.9.5"
-}
+{ 
+    "name" : "tuiter"
+  , "description" : "Library for interacting with Twitter API"
+  , "version" : "0.0.6"
+  , "directories" : { "lib" : "./lib" }
+  , "keywords" : ["twitter","api","streaming api"]
+  , "main" : "index.js"
+  , "author" : "Dan Zajdband <dan.zajdband@gmail.com>"
+  , "dependencies" : {
+	      "oauth" : "0.9.5"
+    }
+  , "devDependencies" : {
+        "mocha" : "1.0.x"
+      , "should" : "0.6.x"
+    }
 }
