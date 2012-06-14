@@ -4,7 +4,8 @@
  */
 
 var Tuiter = require('../')
-  , keys = require('./keys.json');
+  , keys = require('./keys.json')
+  , should = require('should');
 
 var t;
 
