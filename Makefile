@@ -3,7 +3,7 @@ ALL_TESTS = $(shell find test/ -name '*.test.js')
 run-tests:
 	@./node_modules/.bin/mocha \
 		$(TESTFLAGS) \
-		$(TESTS)
+		$(TESTS) -r should -t 10000
 
 test:
 	@$(MAKE) NODE_PATH=lib TESTS="$(ALL_TESTS)" run-tests
