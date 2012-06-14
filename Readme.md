@@ -30,10 +30,18 @@ Use the api methods as you want, for example:
 Using the Streaming is a little different:
 
     tu.filter({track: ['soccer','pokemon']}, function(stream){
-      stream.on('data', function(data){
+
+      // tweets :)
+      stream.on('tweet', function(data){
         console.log(data);
       });
 
+      // deleted statuses data
+      stream.on('delete', function(del){
+        console.log(del);
+      });
+
+      // errors
       stream.on('error', function(err){
         console.log(err);
       });
