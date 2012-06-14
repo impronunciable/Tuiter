@@ -52,4 +52,23 @@ describe('rest', function(){
     });
   });
 
+
+  describe('#updateStatus() and #destroyStatus()', function(){
+    it('should update status with "Just testing Tuiter https://github.com/danzajdband/Tuiter"', function(done){
+      t.updateStatus({'status' : '2Just testing Tuiter https://github.com/danzajdband/Tuiter'}, function(err, data){
+        should.not.exist(err);
+        data.should.be.ok;
+        "object".should.equal(typeof data);
+        data.text.should.exist;
+
+        t.destroyStatus({id: data.id_str}, function(){
+         should.not.exist(err);
+         data.should.be.ok;
+          done();
+        });
+
+      });
+    });
+  });
+
 });
