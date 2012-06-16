@@ -47,6 +47,11 @@ Using the Streaming is a little different:
       });
     });
 
+## Demo
+
+A Tuiter + Express + Socket.io + Google Maps example demo is deployed [here](http://pure-waterfall-1016.herokuapp.com).
+You can find the code [here](https://github.com/danzajdband/Tuiter/tree/master/examples/map).
+
 ## Features
 
 + All API methods available
