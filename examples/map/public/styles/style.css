@@ -1,0 +1,18 @@
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  width: 960px;
+  margin: 0 auto;
+  background: url(../images/bg.gif);
+  margin-bottom: 20px;
+}
+
+#map {
+  width: 960px;
+  height: 660px;
+  margin: 20px 0;
+}
+
+a {
+  color: #7d7d7d;
+  text-decoration: none;
+}
