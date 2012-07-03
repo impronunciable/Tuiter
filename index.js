@@ -1,1 +1,1 @@
-var exports = module.exports = require('./lib/tuiter.js');
+exports = module.exports = require('./lib/tuiter.js');
