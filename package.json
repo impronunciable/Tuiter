@@ -7,7 +7,7 @@
   , "main" : "index.js"
   , "author" : "Dan Zajdband <dan.zajdband@gmail.com>"
   , "dependencies" : {
-	      "oauth" : "0.9.5"
+	      "oauth" : "0.9.7"
     }
   , "devDependencies" : {
         "mocha" : "1.0.x"
