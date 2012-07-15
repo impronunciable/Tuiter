@@ -134,4 +134,8 @@
       , "502" : { "definition": "Bad Gateway", "description": "Twitter is down or being upgraded." }
       , "503" : { "definition": "Service Unavailable", "description": "The Twitter servers are up, but overloaded with requests. Try again later." }
     }
+  , "timers" : {
+        "tcp" : { "min": 250, "max": 16000 }
+      , "http" : { "min": 10000 , "max": 240000 }
+    }
 }
