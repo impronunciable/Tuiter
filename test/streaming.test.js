@@ -23,6 +23,9 @@ describe('streaming', function(){
         , stream;
       setTimeout(function(){
         stream.destroy();
+        var listeners = stream.listeners('tweet').length === 0;
+        listeners.should.be.ok;
+        done();
       }, timeout);
       t.filter({ track: 'twitter' }, function(s) {
         stream = s;
@@ -33,11 +36,6 @@ describe('streaming', function(){
           
         });
         stream.on('error', function(status) {
-          throw new Error('[Stream] Error ' + status.code + ': ' + status.description);
-        });
-        stream.on('end', function(response) {
-          //console.log('[Stream] Disconnected from Twitter, received ' + tweetsReceived + ' tweets in ' + timeout / 1000 + ' seconds.');
-          done();
         });
       });
     });
