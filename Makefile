@@ -1,4 +1,4 @@
-ALL_TESTS = $(shell find test/ -name '*.test.js')
+ALL_TESTS = $(shell find test/ -name '*.test.js' ! -name '._*')
 
 run-tests:
 	@./node_modules/.bin/mocha \
