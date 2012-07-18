@@ -36,15 +36,6 @@ Using the Streaming is a little different:
         console.log(data);
       });
 
-      // deleted statuses data
-      stream.on('delete', function(del){
-        console.log(del);
-      });
-
-      // errors
-      stream.on('error', function(err){
-        console.log(err);
-      });
     });
 
 ## Demo
@@ -55,6 +46,8 @@ You can find the code [here](https://github.com/danzajdband/Tuiter/tree/master/e
 ## Features
 
 + All API methods available
++ Automatic reconnection for Streaming API calls
++ Gzip compression
 + Params preprocessing: Locations as {lat: num,long:num } arrays, allow array params
 + API HTTP Error handling
 + Paging for REST API
