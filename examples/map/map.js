@@ -50,9 +50,17 @@ t.filter({locations: [{lat: -90, long: -180},{lat: 90, long: 180}]}, function(st
 
   // New tweet
   stream.on("tweet", function(data){
-    if(data.geo && data.geo.coordinates){
+    if(data.coordinates && data.coordinates.coordinates){
       io.sockets.emit("tweet", {
-          coordinates: data.geo.coordinates
+          coordinates: data.coordinates.coordinates
+        , screen_name: data.user.screen_name
+        , text: data.text
+        , pic: data.user.profile_image_url
+      });
+    } else if(data.place){
+      var place = data.place.bounding_box.coordinates[0][0];
+       io.sockets.emit("tweet", {
+          coordinates: place
         , screen_name: data.user.screen_name
         , text: data.text
         , pic: data.user.profile_image_url
