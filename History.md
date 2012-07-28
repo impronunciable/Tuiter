@@ -1,3 +1,14 @@
+0.1.2 / 2012-07-26
+==================
+
+  * Streaming API restart event
+  * Streaming API end event
+
+0.1.2 / 2012-07-26
+==================
+
+  * Reconnection bug fixes
+
 0.1.1 / 2012-07-18
 ==================
 
