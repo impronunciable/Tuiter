@@ -43,7 +43,7 @@ If you want to restart the Streaming API connection you can use:
     tu.filter({track: "pizza"}, function(stream){
 
       setTimeout(function(){      
-        stream.restart({follow: "314159"});
+        stream.emit('restart', {follow: "314159"});
       }, 10000);
 
     });
@@ -53,7 +53,7 @@ You can also finish the connection:
     tu.filter({track: "milanesa"}, function(stream){
 
       setTimeout(function(){      
-        stream.end();
+        stream.emit('end');
       }, 2 * 3 * 4);
 
     });
