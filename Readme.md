@@ -58,10 +58,9 @@ You can also finish the connection:
 
     });
 
-## Demo
+## Showcase
 
-A Tuiter + Express + Socket.io + Google Maps example demo is deployed [here](http://pure-waterfall-1016.herokuapp.com).
-You can find the code [here](https://github.com/danzajdband/Tuiter/tree/master/examples/map).
+You can find Projects and demos using Tuiter [here](http://zajdband.com.ar/tuiter-showcase.html)
 
 ## Features
 
