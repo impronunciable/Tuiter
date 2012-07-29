@@ -1,0 +1,23 @@
+extends layout
+
+block content
+  div(style="float:right;")
+    a.twitter-follow-button(href="https://twitter.com/dzajdband", data-show-count="false") Follow @dzajdband
+
+  script
+    !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+
+  h1= title
+
+  strong 
+    |powered by 
+    a(href="https://github.com/danzajdband/Tuiter") Tuiter
+    |, 
+    a(href="http://expressjs.com") Express
+    |, 
+    a(href="http://socket.io") Socket.io
+    |  and 
+    a(href="http://highcharts.com") Highcharts
+
+  #container
+
