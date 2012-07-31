@@ -42,10 +42,10 @@ describe('rest', function(){
 
   describe('#showUser()', function(){
     it('should return extended information about @dzajdband', function(done){
-      t.showUser({'screen_name' :'dzajdband' }, function(err, data){
+      t.showUser({'screen_name': 'dzajdband'}, function(err, data){
         should.not.exist(err);
         data.should.be.ok;
-        "object".should.equal(typeof data);
+        "dzajdband".should.equal(data.screen_name);
         done();
       });
     });
@@ -58,25 +58,6 @@ describe('rest', function(){
         data.should.be.ok;
         "object".should.equal(typeof data);
         done();
-      });
-    });
-  });
-
-
-  describe('#updateStatus() and #destroyStatus()', function(){
-    it('should update status with "Just testing Tuiter https://github.com/danzajdband/Tuiter"', function(done){
-      t.updateStatus({'status' : '2Just testing Tuiter https://github.com/danzajdband/Tuiter'}, function(err, data){
-        should.not.exist(err);
-        data.should.be.ok;
-        "object".should.equal(typeof data);
-        data.text.should.exist;
-
-        t.destroyStatus({id: data.id_str}, function(){
-         should.not.exist(err);
-         data.should.be.ok;
-          done();
-        });
-
       });
     });
   });
