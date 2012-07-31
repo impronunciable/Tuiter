@@ -1,3 +1,9 @@
+0.1.4 / 2012-07-31
+==================
+
+  * Bug Fixes
+  * Posibility to use special access tokens for each request
+
 0.1.3 / 2012-07-26
 ==================
 
