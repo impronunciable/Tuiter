@@ -40,6 +40,16 @@ describe('rest', function(){
     });
   });
 
+  describe('#showUser()', function(){
+    it('should return extended information about @dzajdband', function(done){
+      t.showUser({'screen_name' :'dzajdband' }, function(err, data){
+        should.not.exist(err);
+        data.should.be.ok;
+        "object".should.equal(typeof data);
+        done();
+      });
+    });
+  });
 
   describe('#retweets()', function(){
     it('should return latest retweets to 209401805203976192 tweet', function(done){
