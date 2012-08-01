@@ -1,4 +1,5 @@
-$(function(){
+
+;(function(){
 
   /*
    * Render the gmap
@@ -22,7 +23,7 @@ $(function(){
 
     // Add marker
 
-    var myLatlng = new google.maps.LatLng(data.coordinates[0],data.coordinates[1]);
+    var myLatlng = new google.maps.LatLng(data.coordinates[1],data.coordinates[0]);
 
     var marker = new google.maps.Marker({
       position: myLatlng, 
@@ -49,4 +50,4 @@ $(function(){
 
   });
 
-});
+})();
