@@ -1,0 +1,376 @@
+{
+    "homeTimeline" : {
+        "resource": "https://api.twitter.com/1/statuses/home_timeline.json"
+      , "method": "get"
+    }  
+  , "mentions" : {
+        "resource": "https://api.twitter.com/1/statuses/mentions.json"
+      , "method": "get"
+    }
+  , "publicTimeline" : {
+        "resource": "https://api.twitter.com/1/statuses/public_timeline.json"
+      , "method": "get"
+    }
+  , "retweetedByMe" : {
+        "resource": "https://api.twitter.com/1/statuses/retweeted_by_me.json"
+      , "method": "get"
+    }
+  , "retweetedtoMe" : { 
+        "resource": "https://api.twitter.com/1/statuses/retweeted_to_me.json"
+      , "method": "get"
+    }
+  , "retweetsOfMe" : { 
+        "resource": "https://api.twitter.com/1/statuses/retweets_of_me.json"
+      , "method": "get"
+    }
+  , "userTimeline" : { 
+        "resource": "https://api.twitter.com/1/statuses/user_timeline.json"
+      , "method": "get"
+    }
+  , "retweetedToUser" : { 
+        "resource": "https://api.twitter.com/1/statuses/retweeted_to_user.json"
+      , "method": "get"
+    }
+  , "retweetedByUser": { 
+        "resource": "https://api.twitter.com/1/statuses/retweeted_by_user.json"
+      , "method": "get"
+    }
+  , "retweetedBy" : {
+        "resource": "https://api.twitter.com/1/statuses/:id/retweeted_by.json"
+      , "method": "get"
+    }
+  , "retweetedByIds" : { 
+        "resource": "https://api.twitter.com/1/statuses/:id/retweeted_by/ids.json"
+      , "method": "get"
+    }
+  , "retweets" : {
+        "resource": "https://api.twitter.com/1/statuses/retweets/:id.json"
+      , "method": "get"
+    }
+  , "show" : {
+        "resource": "https://api.twitter.com/1/statuses/show/:id.json"
+      , "method": "get"
+    }        
+  , "oembed" :  {
+        "resource": "https://api.twitter.com/1/statuses/oembed.json"
+      , "method": "get"
+    }
+    , "directMessages" : { 
+          "resource": "https://api.twitter.com/1/direct_messages.json"
+        , "method": "get"
+      }
+    , "directMessagesSent" : {
+          "resource": "https://api.twitter.com/1/direct_messages/sent.json"
+        , "method": "get"
+      }
+    , "directMessagesShow" : {
+          "resource": "https://api.twitter.com/1/direct_messages/show/:id.json"        , "method": "get"
+      }
+    , "followersIds" : { 
+          "resource": "https://api.twitter.com/1/followers/ids.json"
+        , "method": "get"
+      }
+    , "friendsIds" : { 
+          "resource": "https://api.twitter.com/1/friends/ids.json"
+        , "method": "get"
+      }
+    , "friendshipExists" : {
+          "resource": "https://api.twitter.com/1/friendships/exists.json"
+        , "method": "get"
+      } 
+    , "incomingFriendships" : {
+          "resource": "https://api.twitter.com/1/friendships/incoming.json"
+        , "method": "get"
+      }
+    , "outgoingFriendships" : {
+          "resource": "https://api.twitter.com/1/friendships/outgoing.json"
+        , "method": "get"
+      }
+    , "showFriendships" : { 
+          "resource": "https://api.twitter.com/1/friendships/show.json"
+        , "method": "get"
+      }
+    , "friendshipLookup" : {
+          "resource": https://api.twitter.com/1/friendships/lookup.json"
+        , "method": "get"
+      }
+    , "noRetweetsFriends" : {
+          "resource": "https://api.twitter.com/1/friendships/no_retweet_ids.json"
+        , "method": "get"
+      }
+    , "usersLookup" : {
+          "resource": "https://api.twitter.com/1/users/lookup.json"
+        , "method": "get"
+      }
+    , "profileImage" : {
+          "resource": "https://api.twitter.com/1/users/profile_image/:screen_name.json"
+        , "method": "get"
+    , "usersSearch" : {
+          "resource": "https://api.twitter.com/1/users/search.json"
+        , "method": "get"
+      }
+    , "showUser" : 
+          "resource": "https://api.twitter.com/1/users/show.json"
+        , "method": "get"
+      }
+    , "userContributees" : {
+          "resource": "https://api.twitter.com/1/users/contributees.json"
+        , "method": "get"
+      }
+    , "userContributors" : {
+          "resource": "https://api.twitter.com/1/users/contributors.json"
+        , "method": "get"
+      }
+    , "userSuggestions" : { 
+          "resource": "https://api.twitter.com/1/users/suggestions.json"
+        , "method": "get"
+      }
+    , "userSuggestionsSlug" : {
+          "resource": "https://api.twitter.com/1/users/suggestions/:slug.json"
+        , "method": "get"
+      }
+    , "userSuggestionsSlugMembers" : {
+          "resource": "https://api.twitter.com/1/users/suggestions/:slug/members.json"
+        , "method": "get"
+      }
+    , "favorites" : {
+          "resource": "https://api.twitter.com/1/favorites.json"
+        , "method": "get"
+      }
+    , "listsAll" : {
+          "resource": "https://api.twitter.com/1/lists/all.json"
+        , "method": "get"
+      }
+    , "listsStatuses" : {
+          "resource": "https://api.twitter.com/1/lists/statuses.json"
+        , "method": "get"
+      }
+    , "listsMemberships" : { 
+          "resource": "https://api.twitter.com/1/lists/memberships.json"
+        , "method": "get"
+      }
+    , "listSuscribers" : {
+          "resource": "https://api.twitter.com/1/lists/subscribers.json"
+        , "method": "get"
+      }
+    , "showListSuscribers" : {
+          "resource": "https://api.twitter.com/1/lists/subscribers/show.json"
+        , "method": "get"
+      }
+    , "isMember" : {
+          "resource": "https://api.twitter.com/1/lists/members/show.json"
+        , "method": "get"
+      }
+    , "listMembers" : {
+          "resource": "https://api.twitter.com/1/lists/members.json"
+        , "method": "get"
+      }
+    , "lists" : {
+          "resource": "https://api.twitter.com/1/lists.json"
+        , "method": "get"
+      }
+    , "showLists" : { 
+          "resource": "https://api.twitter.com/1/lists/show.json"
+        , "method": "get"
+      }
+    , "userLists" : {
+          "resource": "https://api.twitter.com/1/lists/subscriptions.json"
+        , "method": "get"
+      }
+    , "rateLimitStatus" : {
+          "resource": "https://api.twitter.com/1/account/rate_limit_status.json"
+        , "method": "get"
+      }
+    , "verifyCredentials" : { 
+          "resource": "https://api.twitter.com/1/account/verify_credentials.json"
+        , "method": "get"
+      }
+    , "totals" : {
+          "resource": "https://api.twitter.com/1/account/totals.json"      
+        , "method": "get"
+      }
+    , "accountSettings" : {
+          "resource": "https://api.twitter.com/1/account/settings.json"
+        , "method": "get"
+      }
+    , "savedSearches" : {
+          "resource": "https://api.twitter.com/1/saved_searches.json"
+        , "method": "get"
+      }
+    , "showSavedSearch" : {
+          "resource": "https://api.twitter.com/1/saved_searches/show/:id.json"
+        , "method": "get"
+      }
+    , "trends" : {
+          "resource": "https://api.twitter.com/1/trends/:woeid.json"
+        , "method": "get"
+      }
+    , "availableTrends" : {
+          "resource": "https://api.twitter.com/1/trends/available.json"
+        , "method": "get"
+      }
+    , "geo" : {
+          "resource": "https://api.twitter.com/1/geo/id/:place_id.json"
+        , "method": "get"
+      }
+    , "reverseGeocode" : {
+          "resource": "https://api.twitter.com/1/geo/reverse_geocode.json"
+        , "method": "get"
+      }
+    , "similarPlaces" : {
+          "resource": "https://api.twitter.com/1/geo/similar_places.json"
+        , "method": "get"
+      }
+    , "place" : {
+          "resource": "https://api.twitter.com/1/geo/place.json"
+        , "method": "get"
+      }
+    , "dailyTrends" : {
+          "resource": "https://api.twitter.com/1/trends/daily.json"
+        , "method": "get"
+      }
+    , "weeklyTrends" : {
+          "resource": "https://api.twitter.com/1/trends/weekly.json"
+        , "method": "get"
+      }
+    , "blocking" : {
+          "resource": "https://api.twitter.com/1/blocks/blocking.json"        
+        , "method": "get"
+      }
+    , "blockingIds" : {
+          "resource": "https://api.twitter.com/1/blocks/blocking/ids.json"
+        , "method": "get"
+      }
+    , "isBlocking" : {
+          "resource": "https://api.twitter.com/1/blocks/exists.json"
+        , "method": "get"
+      }
+    , "test" : {
+          "resource": "https://api.twitter.com/1/help/test.json"
+        , "method": "get"
+      }
+    , "configuration" : {
+          "resource": "https://api.twitter.com/1/help/configuration.json"
+        , "method": "get"
+      }
+    , "languages" : {
+          "resource": "https://api.twitter.com/1/help/languages.json"
+        , "method": "get"
+      }
+    , "privacy" : {
+          "resource": "https://api.twitter.com/1/legal/privacy.json"
+        , "method": "get"
+      }
+    , "tos" : { 
+          "resource": "https://api.twitter.com/1/legal/tos.json"
+        , "method": "get"
+      }    
+    , "destroyStatus" : {
+          "resource": "https://api.twitter.com/1/statuses/destroy/:id.json"
+        , "method": "post"
+      }
+    , "retweetStatus" : {
+          "resource": "https://api.twitter.com/1/statuses/retweet/:id.json"
+        , "method": "post"
+      }
+    , "updateStatus"  : {
+          "resource": "https://api.twitter.com/1/statuses/update.json"
+        , "method": "post"
+      }
+    , "updateStatusWithMedia" : {
+          "resource": "https://upload.twitter.com/1/statuses/update_with_media.json"
+        , "method": "post"
+      }
+    , "createFavorite" : {
+          "resource": "https://api.twitter.com/1/favorites/create/:id.json"
+        , "method": "post"
+      }
+    , "destroyFavorite" : {
+          "resource": "https://api.twitter.com/1/favorites/destroy/:id.json"
+        , "method": "post"
+      }
+    , "listsMembersDestroy" : {
+          "resource": "https://api.twitter.com/1/lists/members/destroy.json"
+        , "method": "post"
+      }
+    , "createListSuscriber" : {
+          "resource": "https://api.twitter.com/1/lists/subscribers/create.json"
+        , "method": "post"
+      }
+    , "destroyListSuscriber" : {
+          "resource": "https://api.twitter.com/1/lists/subscribers/destroy.json"
+        , "method": "post"
+      }
+    , "createListMembers" : {
+          "resource": "https://api.twitter.com/1/lists/members/create_all.json"
+        , "method": "post"
+      }
+    , "createListMember" : {
+          "resource": "https://api.twitter.com/1/lists/members/create.json"
+        , "method": "post"
+      }
+    , "destroyList" : {
+          "resource": "https://api.twitter.com/1/lists/members/create.json"
+        , "method": "post"
+      }
+    , "updateList" : {
+          "resource": "https://api.twitter.com/1/lists/update.json"
+        , "method": "post"
+      }
+    , "createList" : {
+          "resource": "https://api.twitter.com/1/lists/create.json"
+        , "method": "post"
+      }
+    , "endSession" : { 
+          "resource": "https://api.twitter.com/1/account/end_session.json"
+        , "method": "post"
+      }
+    , "updateProfile" : {
+          "resource": "https://api.twitter.com/1/account/update_profile.json"
+        , "method": "post"
+      }
+    , "updateBackgroundImage" : {
+          "resource": "https://api.twitter.com/1/account/update_profile_background_image.json"
+        , "method": "post"
+      }
+    , "updateProfileColors" : {
+          "resource": "https://api.twitter.com/1/account/update_profile_colors.json"
+          , "method": "post"
+        }
+    , "updateProfileImage" : {
+          "resources": "https://api.twitter.com/1/account/update_profile_image.json"
+        , "method": "post"
+      }
+    , "updateAccountSettings" : {
+          "resources": "https://api.twitter.com/1/account/settings.json"
+        , "method": "post"
+      }
+    , "enableFollowNotifications" : {
+          "resource": "https://api.twitter.com/1/notifications/follow.json"
+        , "method": "post"
+      }
+    , "leaveNotifications" : {
+          "resource": "https://api.twitter.com/1/notifications/leave.json"
+        , "method": "post"
+      }
+    , "createSavedSearch" : {
+          "resource": "https://api.twitter.com/1/saved_searches/create.json"
+        , "method": "post"
+      }
+    , "destroySavedSearch" : {
+          "resource": "https://api.twitter.com/1/saved_searches/destroy/:id.json"
+        , "method": "post"
+      }
+    , "createBlock" : {
+          "resource": "https://api.twitter.com/1/blocks/create.json"
+        , "method": "post"
+      }
+    , "destroyBlock" : {
+          "resource": "https://api.twitter.com/1/blocks/destroy.json"
+        , "method": "post"
+      }
+    , "reportSpam" : {
+          "resource": "https://api.twitter.com/1/report_spam.json"
+        , "method": "post"
+      }
+}

@@ -1,0 +1,30 @@
+{
+    "firehose" : {
+        "resource": "https://stream.twitter.com/1/statuses/firehose.json"
+      , "method": "get"
+    }
+  , "sample" : {
+        "resource": "https://stream.twitter.com/1/statuses/sample.json"
+      , "method": "get"
+    }
+  , "links" : { 
+        "resource": "https://stream.twitter.com/1/statuses/links.json"
+      , "method": "get"
+    }
+  , "retweet" : {
+        "resource": "https://stream.twitter.com/1/statuses/retweet.json"
+      , "method": "get"
+    }
+  , "user" : {
+        "resource": "https://userstream.twitter.com/2/user.json"
+      , "method": "get"
+    }
+  , "site" : {
+        "resource": "https://sitestream.twitter.com/2b/site.json"
+      , "method": "get"
+    }
+  , "filter" : {
+        "resource": "https://stream.twitter.com/1/statuses/filter.json"
+      , "method": "post"
+    }
+}
