@@ -91,7 +91,7 @@
         , "method": "get"
       }
     , "friendshipLookup" : {
-          "resource": https://api.twitter.com/1/friendships/lookup.json"
+          "resource": "https://api.twitter.com/1/friendships/lookup.json"
         , "method": "get"
       }
     , "noRetweetsFriends" : {
@@ -105,11 +105,12 @@
     , "profileImage" : {
           "resource": "https://api.twitter.com/1/users/profile_image/:screen_name.json"
         , "method": "get"
+      }
     , "usersSearch" : {
           "resource": "https://api.twitter.com/1/users/search.json"
         , "method": "get"
       }
-    , "showUser" : 
+    , "showUser" : {
           "resource": "https://api.twitter.com/1/users/show.json"
         , "method": "get"
       }
