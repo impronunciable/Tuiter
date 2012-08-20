@@ -1,6 +1,0 @@
-{
-    "search": { 
-        "resource": "https://search.twitter.com/search.json"
-      , "method": "get"
-    }
-}
