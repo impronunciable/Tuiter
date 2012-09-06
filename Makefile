@@ -8,5 +8,8 @@ run-tests:
 test:
 	@$(MAKE) NODE_PATH=lib TESTS="$(ALL_TESTS)" run-tests
 
+test-streaming:
+	@$(MAKE) NODE_PATH=lib TESTS="test/streaming.test.js" run-tests
+
 
 .PHONY: test

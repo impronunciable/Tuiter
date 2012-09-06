@@ -19,10 +19,10 @@ describe('streaming', function(){
   describe('#filter()', function(){
     it('should stream tweets about twitter', function(done){
       var tweetsReceived = 0
-        , timeout = 5000
+        , timeout = 3500
         , stream;
       setTimeout(function(){
-        stream.destroy();
+        stream.emit('end');
         var listeners = stream.listeners('tweet').length === 0;
         listeners.should.be.ok;
         done();
