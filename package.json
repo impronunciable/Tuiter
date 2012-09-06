@@ -9,6 +9,8 @@
   , "dependencies" : {
         "superagent": "0.8.x"
       , "superagent-oauth": "0.2.x"
+      , "oauth": "0.9.x"
+      , "njstream": "0.0.x"
     }
   , "devDependencies" : {
         "mocha" : "1.0.x"
