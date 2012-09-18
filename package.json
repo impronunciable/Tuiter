@@ -1,7 +1,7 @@
 { 
     "name" : "tuiter"
   , "description" : "Library for interacting with Twitter API"
-  , "version" : "0.1.6"
+  , "version" : "0.2.0"
   , "directories" : { "lib" : "./lib" }
   , "keywords" : ["twitter","api","streaming api"]
   , "main" : "index.js"
