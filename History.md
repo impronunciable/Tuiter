@@ -1,3 +1,12 @@
+0.2.0 / 2012-09-18
+==================
+
+  * Updated to REST API 1.1
+  * HTTP requests via Superagent and Superagent-oauth
+  * Minimalistic code
+  * Parsing via NJStream
+
+
 0.1.6 / 2012-08-28
 ==================
 
