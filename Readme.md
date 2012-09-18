@@ -42,12 +42,12 @@ Using the Streaming is a little different:
     });
 ```
 
-If you want to restart the Streaming API connection you can use:
+If you want to restart the Streaming API connection you can use (not available yet):
 
 ```js
     tu.filter({track: "pizza"}, function(stream){
       setTimeout(function(){      
-        stream.emit('restart', {follow: "314159"});
+        stream.restart();
       }, 10000);
     });
 ```
@@ -57,7 +57,7 @@ You can also finish the connection:
     tu.filter({track: "milanesa"}, function(stream){
 
       setTimeout(function(){      
-        stream.emit('end');
+        stream.end();
       }, 2 * 3 * 4);
     });
 ```
