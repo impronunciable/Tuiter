@@ -4,59 +4,63 @@ Tuiter is a Node.JS library that makes the interaction with the Twitter API easy
 
 ## How to install
 
+```bash
     npm install tuiter
+```
 
 ## How to use
 
-Require Tuiter
-
-    var Tuiter = require('tuiter');
-
 Create a Tuiter object with your [Twitter application keys](https://dev.twitter.com/apps/new)
- 
-    var tu = new Tuiter({
+
+```js
+    var keys = {
         "consumer_key" : "blablabla"
       , "consumer_secret" : "blablabla" 
       , "access_token_key" : "blablabla"
       , "access_token_secret" : "blablabla"
-    });
+    };
+
+    var tu = require('tuiter')(keys);
+```
 
 Use the api methods as you want, for example:
  
+```js
     tu.mentions({trim_user: false}, function(err, data){
       console.log(data);	
     });
+```
 
 Using the Streaming is a little different:
 
+```js
     tu.filter({track: ['soccer','pokemon']}, function(stream){
-
       // tweets :)
       stream.on('tweet', function(data){
         console.log(data);
       });
-
     });
+```
 
 If you want to restart the Streaming API connection you can use:
 
+```js
     tu.filter({track: "pizza"}, function(stream){
-
       setTimeout(function(){      
         stream.emit('restart', {follow: "314159"});
       }, 10000);
-
     });
+```
 
 You can also finish the connection: 
-
+```js
     tu.filter({track: "milanesa"}, function(stream){
 
       setTimeout(function(){      
         stream.emit('end');
       }, 2 * 3 * 4);
-
     });
+```
 
 ## Showcase
 
