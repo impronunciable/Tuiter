@@ -5,6 +5,7 @@
   * HTTP requests via Superagent and Superagent-oauth
   * Minimalistic code
   * Parsing via NJStream
+  * Streaming response is a Stream object
 
 
 0.1.6 / 2012-08-28
