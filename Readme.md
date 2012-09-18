@@ -68,13 +68,10 @@ You can find Projects and demos using Tuiter [here](http://zajdband.com.ar/tuite
 
 ## Features
 
-+ All API methods available
++ All API methods available (Including REST API 1.1)
 + Automatic reconnection for Streaming API calls
 + Gzip compression
 + Params preprocessing: Locations as {lat: num,long:num } arrays, allow array params
-+ API HTTP Error handling
-+ Paging for REST API
-+ Custom results for Search API
 
 ## Available methods
 
