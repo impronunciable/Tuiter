@@ -335,6 +335,22 @@
           "resource": "https://api.twitter.com/1.1/report_spam.json"
         , "method": "post"
       }
+    , "authenticate" : {
+          "resource": "https://api.twitter.com/oauth/authenticate"
+        , "method": "get"
+      }
+    , "authorize" : {
+          "resource": "https://api.twitter.com/oauth/authorize"
+        , "method": "get"
+      }
+    , "accessToken" : {
+          "resource": "https://api.twitter.com/oauth/access_token"
+        , "method": "post"
+      }
+    , "requestToken" : {
+          "resource": "https://api.twitter.com/oauth/request_token"
+        , "method": "post"
+      }
     , "filter" : {
           "resource": "https://stream.twitter.com/1.1/statuses/filter.json"
         , "method": "post"
