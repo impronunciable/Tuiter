@@ -22,9 +22,9 @@ describe('streaming', function(){
         , timeout = 3500
         , stream;
       setTimeout(function(){
-        stream.emit('end');
+        stream.end();
         var listeners = stream.listeners('tweet').length === 0;
-        //listeners.should.be.ok;
+        listeners.should.be.ok;
         done();
       }, timeout);
       t.filter({ track: 'twitter' }, function(s) {
