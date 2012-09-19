@@ -90,7 +90,7 @@ You can find Projects and demos using Tuiter [here](http://zajdband.com.ar/tuite
 
 ## Features
 
-+ All API methods available (Including REST API 1.1)
++ All API methods available (Including REST API 1.1): [https://github.com/danzajdband/Tuiter/wiki/API-Methods] (https://github.com/danzajdband/Tuiter/wiki/API-Methods)
 + Automatic reconnection for Streaming API calls
 + Gzip compression
 + Params preprocessing: Locations as {lat: num,long:num } arrays, allow array params
