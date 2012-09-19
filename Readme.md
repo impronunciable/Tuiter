@@ -42,7 +42,18 @@ Using the Streaming is a little different:
     });
 ```
 
-If you want to restart the Streaming API connection you can use (not available yet):
+It is possible to use lat, long objects for describing location bounding boxes:
+
+```js
+    tu.filter({location: [{lat: -90, long: -180}, {lat: 90, long: 180}]}, function(stream){
+      // tweets :)
+      stream.on('tweet', function(data){
+        console.log(data);
+      });
+    });
+```
+
+If you want to restart the Streaming API connection you can use (not yet available):
 
 ```js
     tu.filter({track: "pizza"}, function(stream){
@@ -52,7 +63,7 @@ If you want to restart the Streaming API connection you can use (not available y
     });
 ```
 
-You can also finish the connection: 
+Streaming API Calls reconnect automatically but you can finish the connection manually: 
 ```js
     tu.filter({track: "milanesa"}, function(stream){
 
@@ -61,6 +72,17 @@ You can also finish the connection:
       }, 2 * 3 * 4);
     });
 ```
+
+API Call responses are Stream objects so you can pipe (for example to a file):
+
+```js
+    var output = fs.createWriteStream(__dirname + '/output.txt');
+
+    tuiter.sample(function(stream){
+      stream.pipe(output);
+    });
+```
+
 
 ## Showcase
 
