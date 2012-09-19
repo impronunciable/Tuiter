@@ -53,16 +53,6 @@ It is possible to use lat, long objects for describing location bounding boxes:
     });
 ```
 
-If you want to restart the Streaming API connection you can use (not yet available):
-
-```js
-    tu.filter({track: "pizza"}, function(stream){
-      setTimeout(function(){      
-        stream.restart();
-      }, 10000);
-    });
-```
-
 Streaming API Calls reconnect automatically but you can finish the connection manually: 
 ```js
     tu.filter({track: "milanesa"}, function(stream){
