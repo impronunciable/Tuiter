@@ -328,7 +328,7 @@
           , "method": "post"
         }
     , "updateProfileImage" : {
-          "resources": "https://api.twitter.com/1.1/account/update_profile_image.json"
+          "resource": "https://api.twitter.com/1.1/account/update_profile_image.json"
         , "method": "post"
       }
     , "reportSpam" : {
