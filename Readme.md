@@ -87,7 +87,7 @@ You can find Projects and demos using Tuiter [here](http://zajdband.com.ar/tuite
 
 ## Available methods
 
-All Search API, REST API and Streaming API methods are available. The names of the methods in the library are up-to-date [inside the code](https://github.com/danzajdband/Tuiter/blob/master/lib/config.json)
+All Search API, REST API V1.1 and Streaming API methods are available. The names of the methods in the library are listed [Here](https://github.com/danzajdband/Tuiter/wiki/API-Methods)
 
 ## License 
 
