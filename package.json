@@ -7,13 +7,13 @@
   , "main" : "index.js"
   , "author" : "Dan Zajdband <dan.zajdband@gmail.com>"
   , "dependencies" : {
-        "superagent": "0.8.x"
+        "superagent": "0.9.7"
       , "superagent-oauth": "0.2.x"
-      , "oauth": "0.9.x"
+      , "oauth": "0.9.8"
       , "njstream": "0.0.x"
     }
   , "devDependencies" : {
-        "mocha" : "1.0.x"
-      , "should" : "0.6.x"
+        "mocha" : "1.6.x"
+      , "should" : "1.2.x"
     }
 }
