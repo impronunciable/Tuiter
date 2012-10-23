@@ -1,3 +1,10 @@
+0.2.1 / 2012-10-23
+==================
+
+  * Auto reconnect properly working
+  * Endpoint typos
+
+
 0.2.0 / 2012-09-18
 ==================
 
