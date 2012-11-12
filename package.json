@@ -11,6 +11,7 @@
       , "superagent-oauth": "0.2.x"
       , "oauth": "0.9.8"
       , "njstream": "0.0.5"
+      , "debug": "*"
     }
   , "devDependencies" : {
         "mocha" : "1.6.x"
