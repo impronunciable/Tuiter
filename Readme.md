@@ -108,7 +108,7 @@ Download testing modules dependencies
 
 Run tests
 
-    make tests
+    make test
 
 ## License 
 
