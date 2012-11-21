@@ -89,6 +89,27 @@ You can find Projects and demos using Tuiter [here](http://zajdband.com.ar/tuite
 
 All Search API, REST API V1.1 and Streaming API methods are available. The names of the methods in the library are listed [Here](https://github.com/danzajdband/Tuiter/wiki/API-Methods)
 
+## Test
+
+Add your development keys in test/keys.json file like as the follow lines:
+
+```js
+    var keys.json = {
+        "consumer_key" : "6ffkyGE7aWgHyOXVAlzZA"
+      , "consumer_secret" : "UFiyaFW9RPSacY7547jlIvk9E6Jn07StbgrDkdtKV8" 
+      , "access_token_key" : "308711490-N62VGRYIvNPgBsqDV0nDW491J9q7GJsXqTHm4JpM"
+      , "access_token_secret" : "QVXnxCI7vO3wtkbxBfMfsDZWHCQX23DipMMTObmak"
+    };
+```
+
+Download testing modules dependencies
+
+    npm install
+
+Run tests
+
+    make test
+
 ## License 
 
 (The MIT License)
