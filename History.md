@@ -1,3 +1,13 @@
+0.2.2 / 2012-11-22
+==================
+
+  * Fixed superagent related memory issue for streams
+  * Updated dependencies
+  * Fix on compressed requests
+  * special characters control
+  * added debug module
+
+
 0.2.1 / 2012-10-23
 ==================
 
