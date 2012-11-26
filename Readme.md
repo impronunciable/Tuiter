@@ -58,7 +58,7 @@ Streaming API Calls reconnect automatically but you can finish the connection ma
     tu.filter({track: "milanesa"}, function(stream){
 
       setTimeout(function(){      
-        stream.end();
+        stream.emit('end');
       }, 2 * 3 * 4);
     });
 ```
@@ -73,6 +73,17 @@ API Call responses are Stream objects so you can pipe (for example to a file):
     });
 ```
 
+Although you can explicitly reconnect using other params
+```js
+    var st;
+    tu.filter({track: "milanesa"}, function(stream){
+      stream = st;
+    });
+
+    setTimeout(function(){      
+      st.emit('reconnect', {track: ["ketchup", "papas fritas"]});
+    }, 2 * 3 * 4);
+```
 
 ## Showcase
 
@@ -82,6 +93,7 @@ You can find Projects and demos using Tuiter [here](http://zajdband.com.ar/tuite
 
 + All API methods available (Including REST API 1.1): [https://github.com/danzajdband/Tuiter/wiki/API-Methods] (https://github.com/danzajdband/Tuiter/wiki/API-Methods)
 + Automatic reconnection for Streaming API calls
++ Explicit stream reconnection with argument passing
 + Gzip compression
 + Params preprocessing: Locations as {lat: num,long:num } arrays, allow array params
 
