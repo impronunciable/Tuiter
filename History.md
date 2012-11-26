@@ -1,3 +1,10 @@
+0.2.3 / 2012-11-26
+==================
+
+  * Added stream 'reconnect' & 'end' events 
+  * Lib internal improvements 
+
+
 0.2.2 / 2012-11-22
 ==================
 
