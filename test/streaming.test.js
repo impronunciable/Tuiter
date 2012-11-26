@@ -3,18 +3,12 @@
  * Module dependencies
  */
 
-var Tuiter = require('../')
-  , keys = require('./keys.json')
+var t = require('../')(require('./keys.json'))
   , should = require('should');
 
 var t;
 
 describe('streaming', function(){
-
-  before(function(done){
-    t = new Tuiter(keys);
-    done();
-  });
 
   describe('#filter()', function(){
     it('should stream tweets about twitter', function(done){
@@ -25,6 +19,7 @@ describe('streaming', function(){
         stream.end();
         var listeners = stream.listeners('tweet').length === 0;
         listeners.should.be.ok;
+        stream.emit('end');
         done();
       }, timeout);
       t.filter({ track: 'twitter' }, function(s) {
@@ -38,6 +33,30 @@ describe('streaming', function(){
         stream.on('error', function(status) {
         });
       });
+    });
+  });
+
+  describe('#reconnect', function(){
+    it('should stream about hate and after 5 sec start streaming about love', function(done){
+      var st, hate = true, love = false;
+
+      t.filter({track: 'hate'}, function(stream){
+        st = stream;
+
+        stream.on('tweet', function(tweet){ 
+          if(tweet.text.indexOf('hate') != -1) hate = false; 
+          if(tweet.text.indexOf('love') != -1) love = true;
+        });
+      });
+
+      setTimeout(st.emit.bind(st, 'reconnect', {track: 'love'}), 2500);
+      setTimeout(function(){
+        st.emit('end'); 
+        hate.should.not.be.ok;
+        love.should.be.ok;
+        love
+        done();
+      }, 5000);
     });
   });
 });
