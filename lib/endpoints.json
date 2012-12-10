@@ -55,7 +55,16 @@
           "resource": "https://api.twitter.com/1.1/friends/ids.json"
         , "method": "get"
       }
-     , "friendshipsLookup" : { 
+    , "friendsList" : {
+        "resource": "https://api.twitter.com/1.1/friends/list.json"
+      , "method": "get"
+    }
+    , "followersList" : {
+        "resource": "https://api.twitter.com/1.1/followers/list.json"
+      , "method": "get"
+      
+      } 
+    , "friendshipsLookup" : { 
           "resource": "https://api.twitter.com/1.1/friendships/lookup.json"
         , "method": "get"
       }
