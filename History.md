@@ -1,3 +1,15 @@
+==================
+0.2.5 / 2012-12-11
+
+  * Reconnection fixes
+
+
+==================
+0.2.4 / 2012-12-10
+
+  * Added new REST API methods "friends/list" and "followers/list"
+
+
 0.2.3 / 2012-11-26
 ==================
 
