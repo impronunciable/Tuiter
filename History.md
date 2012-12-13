@@ -1,4 +1,10 @@
 ==================
+0.2.6 / 2012-12-13
+
+  * Allow custom access tokens
+
+
+==================
 0.2.5 / 2012-12-11
 
   * Reconnection fixes
