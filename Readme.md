@@ -26,7 +26,7 @@ Create a Tuiter object with your [Twitter application keys](https://dev.twitter.
 Use the api methods as you want, for example:
  
 ```js
-    tu.mentions({trim_user: false}, function(err, data){
+    tu.mentionsTimeline({trim_user: true}, function(err, data){
       console.log(data);	
     });
 ```
