@@ -37,24 +37,21 @@ describe('streaming', function(){
   });
 
   describe('#reconnect', function(){
-    it('should stream about hate and after 5 sec start streaming about love', function(done){
-      var st, hate = true, love = false;
+    it('should stream about hate and after 2.5 sec start streaming about love', function(done){
+      var st, is_love = false;
 
       t.filter({track: 'hate'}, function(stream){
         st = stream;
 
         stream.on('tweet', function(tweet){ 
-          if(tweet.text.indexOf('hate') != -1) hate = false; 
-          if(tweet.text.indexOf('love') != -1) love = true;
+          if(tweet.text.indexOf('love') != -1) is_love = true;
         });
       });
 
       setTimeout(st.emit.bind(st, 'reconnect', {track: 'love'}), 2500);
       setTimeout(function(){
         st.emit('end'); 
-        hate.should.not.be.ok;
-        love.should.be.ok;
-        love
+        is_love.should.be.ok;
         done();
       }, 5000);
     });
