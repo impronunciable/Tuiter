@@ -19,6 +19,7 @@ describe('streaming', function(){
         stream.end();
         var listeners = stream.listeners('tweet').length === 0;
         listeners.should.be.ok;
+        tweetsReceived.should.be.ok;
         stream.emit('end');
         done();
       }, timeout);
@@ -42,7 +43,6 @@ describe('streaming', function(){
 
       t.filter({track: 'hate'}, function(stream){
         st = stream;
-
         stream.on('tweet', function(tweet){ 
           if(tweet.text.indexOf('love') != -1) is_love = true;
         });
