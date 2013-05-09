@@ -47,8 +47,7 @@ describe('streaming', function(){
           if(tweet.text.indexOf('love') != -1) is_love = true;
         });
       });
-
-      setTimeout(st.emit.bind(st, 'reconnect', {track: 'love'}), 2500);
+      setTimeout(function(){st.emit.bind(st, 'reconnect', {track: 'love'})}, 2500);
       setTimeout(function(){
         st.emit('end'); 
         is_love.should.be.ok;
