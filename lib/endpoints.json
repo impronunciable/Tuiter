@@ -321,7 +321,7 @@
         , "method": "post"
       }
     , "updateWithMedia" : {
-          "resource": "https://upload.twitter.com/1.1/statuses/update_with_media.json"
+          "resource": "https://api.twitter.com/1.1/statuses/update_with_media.json"
         , "method": "post"
       }
     , "updateProfile" : {
@@ -358,6 +358,14 @@
       }
     , "requestToken" : {
           "resource": "https://api.twitter.com/oauth/request_token"
+        , "method": "post"
+      }
+    , "oauth2Token" : {
+          "resource": "https://api.twitter.com/oauth2/token"
+        , "method": "post"
+      }
+    , "oauth2InvalidateToken" : {
+          "resource": "https://api.twitter.com/oauth2/invalidate_token"
         , "method": "post"
       }
     , "filter" : {
