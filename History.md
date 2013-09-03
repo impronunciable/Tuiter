@@ -1,4 +1,10 @@
 ==================
+0.2.11 / 2013-09-03
+
+  * Updated superagent dependency 
+
+
+==================
 0.2.10 / 2013-07-04
 
   * Fixes on error and reconnection

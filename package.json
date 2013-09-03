@@ -1,20 +1,26 @@
-{ 
-    "name" : "tuiter"
-  , "description" : "Library for interacting with Twitter API"
-  , "version" : "0.2.10"
-  , "directories" : { "lib" : "./lib" }
-  , "keywords" : ["twitter","api","streaming api"]
-  , "main" : "index.js"
-  , "author" : "Dan Zajdband <dan.zajdband@gmail.com>"
-  , "dependencies" : {
-        "superagent": "0.14.x"
-      , "superagent-oauth": "0.2.x"
-      , "oauth": "0.9.8"
-      , "njstream": "0.0.5"
-      , "debug": "*"
-    }
-  , "devDependencies" : {
-        "mocha" : "1.6.x"
-      , "should" : "1.2.x"
-    }
+{
+  "name": "tuiter",
+  "description": "Library for interacting with Twitter API",
+  "version": "0.2.11",
+  "directories": {
+    "lib": "./lib"
+  },
+  "keywords": [
+    "twitter",
+    "api",
+    "streaming api"
+  ],
+  "main": "index.js",
+  "author": "Dan Zajdband <dan.zajdband@gmail.com>",
+  "dependencies": {
+    "superagent-oauth": "0.2.x",
+    "oauth": "0.9.8",
+    "njstream": "0.0.5",
+    "debug": "*",
+    "superagent": "~0.15.4"
+  },
+  "devDependencies": {
+    "mocha": "1.6.x",
+    "should": "1.2.x"
+  }
 }
