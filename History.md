@@ -1,4 +1,10 @@
 ==================
+0.2.12 / 2014-04-26
+
+  * Changed "statuses/filter" method from POST to GET.
+
+
+==================
 0.2.11 / 2013-09-03
 
   * Updated superagent dependency 
