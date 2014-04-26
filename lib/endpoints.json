@@ -370,7 +370,7 @@
       }
     , "filter" : {
           "resource": "https://stream.twitter.com/1.1/statuses/filter.json"
-        , "method": "post"
+        , "method": "get"
         , "streaming": true
       }
     , "sample" : {
