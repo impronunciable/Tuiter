@@ -1,7 +1,7 @@
 {
   "name": "tuiter",
   "description": "Library for interacting with Twitter API",
-  "version": "0.2.12",
+  "version": "0.2.13",
   "directories": {
     "lib": "./lib"
   },
