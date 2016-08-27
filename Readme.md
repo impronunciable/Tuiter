@@ -45,7 +45,7 @@ Using the Streaming is a little different:
 It is possible to use lat, long objects for describing location bounding boxes:
 
 ```js
-    tu.filter({location: [{lat: -90, long: -180}, {lat: 90, long: 180}]}, function(stream){
+    tu.filter({locations: [{lat: -90, long: -180}, {lat: 90, long: 180}]}, function(stream){
       // tweets :)
       stream.on('tweet', function(data){
         console.log(data);
